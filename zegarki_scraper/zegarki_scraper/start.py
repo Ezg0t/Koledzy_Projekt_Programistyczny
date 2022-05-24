@@ -5,3 +5,4 @@ class odpal():
         process = CrawlerProcess(get_project_settings())
         process.crawl('zegarownia')
         process.start()
+odpal.scrapy_to_db()
