@@ -67,7 +67,7 @@ try {
 </div>
 <br>
 </li>';
-$i=$i+1
+$i++;
     }
 } catch (MongoConnectionException $e) {
     var_dump($e); 
