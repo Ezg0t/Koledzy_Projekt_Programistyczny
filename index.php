@@ -57,10 +57,12 @@ try {
     var_dump($e);
 }
 
-echo $dataAktualizacji;
 ?>
     </ul>
 </div>
 <script src="js/script.js"></script>
-
+<?php
+echo "TEST";
+echo $dataAktualizacji;
+?>
 </body>
