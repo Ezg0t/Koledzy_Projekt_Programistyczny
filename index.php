@@ -44,12 +44,13 @@ try {
     $query = new MongoDB\Driver\Query([]);
     $result = $manager->executeQuery('zegarki.scrapy_items', $query);
     foreach ($result as $document) {
+	$i=1;
         $producent = $document->producent;
         $nazwa = $document->nazwa;
         $cena = $document->cena;
         $zdjecie = $document->zdjecie;
         $link = $document->link;
-	echo "TESTTESTTEST";
+	echo $i;
 
         echo '<li>
 <div class="list-group w-auto">
