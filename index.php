@@ -57,7 +57,7 @@ try {
     var_dump($e);
 }
 
-Data aktualizacji: $dataAktualizacji
+
 ?>
     </ul>
 </div>
