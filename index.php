@@ -30,13 +30,13 @@ try {
     $manager = new MongoDB\Driver\Manager("mongodb+srv://koledzy_projekt:u1mkLXkE4niiONPd@cluster0.hwii5.mongodb.net/?retryWrites=true&w=majority");
     $query = new MongoDB\Driver\Query([]);
     $result = $manager->executeQuery('zegarki.scrapy_items', $query);
-	$dataAktualizacji = $result[1]->dataAktualizacji;
     foreach ($result as $document) {
         $producent = $document->producent;
         $nazwa = $document->nazwa;
         $cena = $document->cena;
         $zdjecie = $document->zdjecie;
         $link = $document->link;
+	$dataAktualizacji = $document->dataAktualizacji;
         echo '<li>
 <div class="list-group w-auto">
   <a href="' . $link . '" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
