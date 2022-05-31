@@ -38,13 +38,12 @@ $page=1;
 require 'vendor/autoload.php';
 
 
-
+$i=1;
 try {
     $manager = new MongoDB\Driver\Manager("mongodb+srv://koledzy_projekt:u1mkLXkE4niiONPd@cluster0.hwii5.mongodb.net/?retryWrites=true&w=majority");
     $query = new MongoDB\Driver\Query([]);
     $result = $manager->executeQuery('zegarki.scrapy_items', $query);
     foreach ($result as $document) {
-	$i=1;
         $producent = $document->producent;
         $nazwa = $document->nazwa;
         $cena = $document->cena;
