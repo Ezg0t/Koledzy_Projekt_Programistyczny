@@ -36,6 +36,9 @@ $page=1;
             'projection'=>['_id'=> False, "modelXML"=> False],
         ];
 require 'vendor/autoload.php';
+
+
+
 try {
     $manager = new MongoDB\Driver\Manager("mongodb+srv://koledzy_projekt:u1mkLXkE4niiONPd@cluster0.hwii5.mongodb.net/?retryWrites=true&w=majority");
     $query = new MongoDB\Driver\Query([]);
@@ -46,6 +49,9 @@ try {
         $cena = $document->cena;
         $zdjecie = $document->zdjecie;
         $link = $document->link;
+
+echo "TEST";
+var_dump(count($result)); 
         echo '<li>
 <div class="list-group w-auto">
   <a href="' . $link . '" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
@@ -71,8 +77,5 @@ try {
 </div>
 <script src="js/script.js"></script>
 
-<?php
-echo "TEST";
-var_dump(count($result)); 
-?>
+
 </body>
