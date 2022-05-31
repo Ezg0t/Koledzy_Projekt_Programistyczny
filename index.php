@@ -59,7 +59,6 @@ try {
     </ul>
 </div>
 <script src="js/script.js"></script>
-$dataAktualizacji = $result->dataAktualizacji
-Data aktualizacji: $dataAktualizacji
-</center>
+//$dataAktualizacji = $result->dataAktualizacji
+//Data aktualizacji: $dataAktualizacji
 </body>
