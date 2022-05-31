@@ -37,6 +37,7 @@ try {
         $zdjecie = $document->zdjecie;
         $link = $document->link;
         echo '<li>
+<center>
 <div class="list-group w-auto">
   <a href="' . $link . '" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
     <img src="' . $zdjecie . '" width="80" height="80" class="flex-shrink-0">
@@ -60,3 +61,6 @@ try {
 </div>
 <script src="js/script.js"></script>
 </body>
+$dataAktualizacji = $result->dataAktualizacji
+Data aktualizacji: $dataAktualizacji
+</center>
