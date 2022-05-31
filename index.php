@@ -52,7 +52,7 @@ try {
 </li>';
     }
 } catch (MongoConnectionException $e) {
-    var_dump($e);
+    var_dump($e); 
 }
 
 ?>
