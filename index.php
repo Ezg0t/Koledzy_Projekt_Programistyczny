@@ -52,13 +52,12 @@ try {
 </div>
 <br>
 </li>';
-echo "test"
     }
 } catch (MongoConnectionException $e) {
     var_dump($e);
 }
 
-
+echo "test"
 ?>
     </ul>
 </div>
