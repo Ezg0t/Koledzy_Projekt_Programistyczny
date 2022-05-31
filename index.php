@@ -72,6 +72,7 @@ try {
 <script src="js/script.js"></script>
 
 <?php
+echo "TEST";
 echo count($result);
 ?>
 </body>
