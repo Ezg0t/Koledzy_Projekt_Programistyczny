@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-<h1 style="text-align: center">Porównywarka cen zegarków</h1>
+<h1 style="text-align: center">Smartwatche dostępne na stronie zegarownia.pl</h1>
 <br>
 
 <div class="col-md-6" style="margin: auto" id="data-json">
@@ -37,13 +37,12 @@ try {
         $zdjecie = $document->zdjecie;
         $link = $document->link;
         echo '<li>
-<center>
 <div class="list-group w-auto">
   <a href="' . $link . '" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
     <img src="' . $zdjecie . '" width="80" height="80" class="flex-shrink-0">
     <div class="d-flex gap-2 w-100 justify-content-between">
       <div>
-        <h4 class="mb-0">' . $nazwa . '</h4>
+        <h4 class="mb-0">' <center>. $nazwa .</center> '</h4>
         <p class="mb-0 opacity-75">Producent: <b>' . $producent . '</b></p>
       </div>
       <small class=" text-nowrap">' . $cena . '<b>PLN</b> </small>
@@ -60,7 +59,7 @@ try {
     </ul>
 </div>
 <script src="js/script.js"></script>
-</body>
 $dataAktualizacji = $result->dataAktualizacji
 Data aktualizacji: $dataAktualizacji
 </center>
+</body>
