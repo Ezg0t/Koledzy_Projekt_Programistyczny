@@ -42,7 +42,7 @@ try {
     <img src="' . $zdjecie . '" width="80" height="80" class="flex-shrink-0">
     <div class="d-flex gap-2 w-100 justify-content-between">
       <div>
-        <h4 class="mb-0">' <center>. $nazwa .</center> '</h4>
+        <h4 class="mb-0">'. $nazwa .'</h4>
         <p class="mb-0 opacity-75">Producent: <b>' . $producent . '</b></p>
       </div>
       <small class=" text-nowrap">' . $cena . '<b>PLN</b> </small>
