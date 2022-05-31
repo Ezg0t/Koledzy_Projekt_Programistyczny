@@ -29,7 +29,7 @@ try {
 //    $manager = new MongoDB\Driver\Manager("mongodb+srv://kamil_1:haslo999@cluster0.ujpft.mongodb.net/test");
     $manager = new MongoDB\Driver\Manager("mongodb+srv://koledzy_projekt:u1mkLXkE4niiONPd@cluster0.hwii5.mongodb.net/?retryWrites=true&w=majority");
     $query = new MongoDB\Driver\Query([]);
-    $result = $manager->executeQuery('scrapy.scrapy_items', $query);
+    $result = $manager->executeQuery('zegarki.scrapy_items', $query);
     foreach ($result as $document) {
         $producent = $document->producent;
         $nazwa = $document->nazwa;
