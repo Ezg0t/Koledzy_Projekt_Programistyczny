@@ -57,7 +57,7 @@ try {
     var_dump($e);
 }
 
-
+echo $dataAktualizacji;
 ?>
     </ul>
 </div>
