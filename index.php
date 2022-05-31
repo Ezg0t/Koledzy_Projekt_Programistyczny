@@ -24,6 +24,17 @@
     <br></br>
     <ul id="list-group" style="list-style: none">
 <?php
+$page=1;
+        $pageSize=1;
+
+        $filter = [];
+        //Pagination display
+        $options = [
+            'skip'=>($page - 1) * $pageSize,
+            'limit'=>$pageSize,
+            'sort' => ['createTime' => -1],
+            'projection'=>['_id'=> False, "modelXML"=> False],
+        ];
 require 'vendor/autoload.php';
 try {
     $manager = new MongoDB\Driver\Manager("mongodb+srv://koledzy_projekt:u1mkLXkE4niiONPd@cluster0.hwii5.mongodb.net/?retryWrites=true&w=majority");
