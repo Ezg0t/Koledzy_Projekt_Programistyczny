@@ -73,6 +73,6 @@ try {
 
 <?php
 echo "TEST";
-var_dump(count($result));
+var_dump(count($result)); 
 ?>
 </body>
