@@ -7,7 +7,7 @@
 <body>
 <h1 style="text-align: center">Smartwatche dostępne na stronie zegarownia.pl</h1>
 <br>
-
+<center>
 <div class="col-md-6" style="margin: auto" id="data-json">
     <input style="margin-left: 32px; width: 300px" id="search" placeholder="Wyszukaj zegarek po nazwie.." onkeyup="searchWatches()">
     <br></br>
