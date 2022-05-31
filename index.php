@@ -36,6 +36,7 @@ try {
         $cena = $document->cena;
         $zdjecie = $document->zdjecie;
         $link = $document->link;
+	$dataAktualizacji = $document->dataAktualizacji;
         echo '<li>
 <div class="list-group w-auto">
   <a href="' . $link . '" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
@@ -55,7 +56,7 @@ try {
 } catch (MongoConnectionException $e) {
     var_dump($e);
 }
-$dataAktualizacji = $result->dataAktualizacji
+
 Data aktualizacji: $dataAktualizacji
 ?>
     </ul>
