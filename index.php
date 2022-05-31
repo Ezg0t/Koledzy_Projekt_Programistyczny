@@ -25,6 +25,7 @@
     <ul id="list-group" style="list-style: none">
 <?php
 require 'vendor/autoload.php';
+$dataAktualizacji="data"
 try {
 //    $manager = new MongoDB\Driver\Manager("mongodb+srv://kamil_1:haslo999@cluster0.ujpft.mongodb.net/test");
     $manager = new MongoDB\Driver\Manager("mongodb+srv://koledzy_projekt:u1mkLXkE4niiONPd@cluster0.hwii5.mongodb.net/?retryWrites=true&w=majority");
@@ -57,7 +58,7 @@ try {
     var_dump($e);
 }
 
-echo "test"
+echo $dataAktualizacji
 ?>
     </ul>
 </div>
