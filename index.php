@@ -55,10 +55,11 @@ try {
 } catch (MongoConnectionException $e) {
     var_dump($e);
 }
+$dataAktualizacji = $result->dataAktualizacji
+Data aktualizacji: $dataAktualizacji
 ?>
     </ul>
 </div>
 <script src="js/script.js"></script>
-//$dataAktualizacji = $result->dataAktualizacji
-//Data aktualizacji: $dataAktualizacji
+
 </body>
